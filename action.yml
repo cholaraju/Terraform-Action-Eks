@@ -1,0 +1,19 @@
+name: 'Terraform All-in-One'
+description: 'Runs Terraform init, validate, plan, apply, import, and output with --no-color'
+inputs:
+  tf-action:
+    description: 'Terraform action to perform (init, validate, plan, apply, import, output)'
+    required: true
+  import-address:
+    description: 'Resource address for terraform import (required if tf-action is import)'
+    required: false
+  import-id:
+    description: 'Resource ID for terraform import (required if tf-action is import)'
+    required: false
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+branding:
+  icon: 'cloud-rain'
+  color: 'blue'
