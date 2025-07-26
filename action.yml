@@ -1,4 +1,4 @@
-name: 'Terraform All-in-One'
+name: 'Terraform-Action-Eks'
 description: 'Runs Terraform init, validate, plan, apply, import, and output with --no-color'
 inputs:
   tf-action:
